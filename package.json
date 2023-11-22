@@ -1,0 +1,22 @@
+{
+  "name": "run-dev",
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/a",
+    "packages/b",
+    "packages/c"
+  ],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "wait-on": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "mrdr": "^0.0.1"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "mrdr -q --vite-reload-hack"
+  }
+}
